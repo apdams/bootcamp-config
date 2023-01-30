@@ -3,11 +3,17 @@ bootstrap:
 
     features:
         with-special-groups: false
+
         with-raw-capability: true
+
         aggregated-level-name: all
+
         group-prefix: cdf
+
         dataset-suffix: ds
+
         rawdb-suffix: db
+
         rawdb-additional-variants:
             - state
 
@@ -23,26 +29,15 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: 8fed593c-933b-4132-b343-5858f00ec1ae
                 idp-source-name: bootcamp-47-test-all-read
-        - cdf-project: cdf-bootcamp-47-prod
-          mappings:
-              - cdf-group: cdf:root
-                idp-source-id: d75c7b8a-8d23-400e-aff5-8ffb9f2e078a
-                idp-source-name: bootcamp-47-prod-admin
-              - cdf-group: cdf:all:owner
-                idp-source-id: dd4da343-f8de-43a9-97b4-0ee15be1ff7c
-                idp-source-name: bootcamp-47-prod-all-owner
-              - cdf-group: cdf:all:read
-                idp-source-id: 5a3f0577-d3b8-4362-9cd2-41063f0d5d3c
-                idp-source-name: bootcamp-47-prod-all-read
 
 
     namespaces:
         - ns-name: src
-          description: Data sources for the Ice Cream Factory
+          description: Data sources for the Ice Cream Factory # HINT
 
           ns-nodes:
               - node-name: src:001:sap
-                description: Source 01 Data from SAP
+                description: Source 01 Data from SAP # HINT
               - node-name: src:002:opcua
                 description: Source 02 Data from OpcUA
         - ns-name: uc
