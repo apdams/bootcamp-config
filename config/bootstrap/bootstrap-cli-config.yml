@@ -23,6 +23,12 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: 8fed593c-933b-4132-b343-5858f00ec1ae
                 idp-source-name: bootcamp-47-test-all-read
+              - cdf-group: cdf:uc:001:oee:owner
+                idp-source-name: bootcamp-47-test-uc-001-oee-owner
+                idp-source-id: 3afdd985-334d-4159-afea-92f8f778ede9
+              - cdf-group: cdf:uc:001:oee:read
+                idp-source-name: bootcamp-47-test-uc-001-oee-read
+                idp-source-id: f401e9fd-9bd9-4407-9536-9e2855f36bce
         - cdf-project: cdf-bootcamp-47-prod
           mappings:
               - cdf-group: cdf:root
@@ -34,8 +40,12 @@ bootstrap:
               - cdf-group: cdf:all:read
                 idp-source-id: 5a3f0577-d3b8-4362-9cd2-41063f0d5d3c
                 idp-source-name: bootcamp-47-prod-all-read
-
-
+              - cdf-group: cdf:uc:001:oee:owner
+                idp-source-name: bootcamp-47-prod-uc-001-oee-owner
+                idp-source-id: 33997e7e-e577-464c-84ed-88c562ccf2e0
+              - cdf-group: cdf:uc:001:oee:read
+                idp-source-name: bootcamp-47-prod-uc-001-oee-read
+                idp-source-id: 70b15ec4-dd52-4b20-bbf9-2aa7797d47d0
     namespaces:
         - ns-name: src
           description: Data sources for the Ice Cream Factory
